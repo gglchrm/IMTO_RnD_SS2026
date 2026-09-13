@@ -1,0 +1,35 @@
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                     is_hard   No. Observations:                25056
+Model:                                 GEE   No. clusters:                      174
+Method:                        Generalized   Min. cluster size:                 144
+                      Estimating Equations   Max. cluster size:                 144
+Family:                           Binomial   Mean cluster size:               144.0
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Sat, 12 Sep 2026   Scale:                           1.000
+Covariance type:                    robust   Time:                         14:50:34
+====================================================================================================================
+                                                       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------
+Intercept                                           -0.1131      0.152     -0.745      0.456      -0.411       0.184
+C(ctx_len)[T.4000]                                   0.0058      0.004      1.284      0.199      -0.003       0.015
+C(ctx_len)[T.10000]                                  0.0048      0.006      0.782      0.434      -0.007       0.017
+C(model)[T.GigaChat-2-Max]                           0.0019      0.003      0.578      0.563      -0.005       0.008
+C(model)[T.GigaChat-2-Pro]                          -0.0019      0.002     -1.002      0.316      -0.006       0.002
+C(model)[T.GigaChat-3-Ultra]                         0.0595      0.023      2.638      0.008       0.015       0.104
+C(ctx_type)[T.sensitive]                             0.0010      0.006      0.156      0.876      -0.011       0.013
+C(ctx_form)[T.narrative]                            -0.0010      0.006     -0.174      0.862      -0.012       0.010
+C(ctx_len)[T.4000]:C(model)[T.GigaChat-2-Max]       -0.0058      0.003     -1.744      0.081      -0.012       0.001
+C(ctx_len)[T.10000]:C(model)[T.GigaChat-2-Max]      -0.0019      0.006     -0.333      0.739      -0.013       0.009
+C(ctx_len)[T.4000]:C(model)[T.GigaChat-2-Pro]        0.0038      0.004      1.002      0.316      -0.004       0.011
+C(ctx_len)[T.10000]:C(model)[T.GigaChat-2-Pro]     2.05e-07      0.004   5.33e-05      1.000      -0.008       0.008
+C(ctx_len)[T.4000]:C(model)[T.GigaChat-3-Ultra]     -0.0173      0.009     -1.984      0.047      -0.034      -0.000
+C(ctx_len)[T.10000]:C(model)[T.GigaChat-3-Ultra]    -0.0230      0.013     -1.784      0.074      -0.048       0.002
+C(ctx_len)[T.4000]:C(ctx_type)[T.sensitive]         -0.0019      0.005     -0.354      0.724      -0.013       0.009
+C(ctx_len)[T.10000]:C(ctx_type)[T.sensitive]        -0.0010      0.008     -0.117      0.907      -0.017       0.015
+C(ctx_len)[T.4000]:C(ctx_form)[T.narrative]         -0.0058      0.008     -0.751      0.453      -0.021       0.009
+C(ctx_len)[T.10000]:C(ctx_form)[T.narrative]        -0.0048      0.007     -0.663      0.507      -0.019       0.009
+==============================================================================
+Skew:                          0.1007   Kurtosis:                      -1.9894
+Centered skew:                14.5405   Centered kurtosis:            233.9231
+==============================================================================
