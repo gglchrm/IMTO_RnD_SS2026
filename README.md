@@ -20,6 +20,20 @@ We investigate whether GigaChat's guardrails (protecting against
 prompt injections and template-based refusals) are weakened when
 long additional context—whether neutral or sensitive, in narrative
 or dialogue form—is appended to a malicious prompt.
+| Study | Models | Attack Type | ASR |
+|---|---|---|---|
+| Yakovlev & Petrov (2026) | YandexGPT, GigaChat (7 models) | Prompt injection (3 classes) | Depends on model/attack |
+| Limonova & Studenikina (2026) | YandexGPT Lite/Pro, GPT-OSS-20B/120B | Safety benchmark (14 categories) | High safety rates overall |
+| Kumarappan et al. (2026) | Qwen 3 8B, GPT-OSS 20B/120B, Llama 3.1 70B, GPT-4o Mini, GPT-5, Gemini 3 Flash, Claude Opus/Sonnet | Multi-turn priming | 90–100% (open), 70–90% (frontier), 15–17.5% (Claude) |
+| Zhao et al. (2025) | Gemini 2.5 Pro, GPT o4 mini, Grok 3 mini, Claude 4 Sonnet | CoT Hijacking | 99%, 94%, 100%, 94% |
+| Shah et al. (2025) | LLaMA, Qwen, Mistral, Gemini | NINJA (long-context jailbreak) | Significant increase across models |
+| Zhan et al. (2024) | 30 LLM agents (ReAct-prompted GPT-4) | Indirect prompt injection | 24% (GPT-4 ReAct) |
+| Zyryanova et al. (2024) | ChatGPT 4o, Claude 3.8, YandexGPT | Prompt injection | YandexGPT/Claude > ChatGPT 4o |
+| Kolomychenko (2025) | GigaChat, YandexGPT, Western LLMs | Moderation/censorship | High hard censorship rates |
+| Liu et al. (2026) | GPT-4, Claude 3.5, Gemini Pro | Jailbreaking (250 attacks) | 69.2%, 56.4%, 74.4% |
+| AutoRAN (2026) | GPT-o4-mini | Reasoning hijacking | 100% (AdvBench) |
+
+*Note: Some studies do not report a single ASR figure; the table reflects their main findings.*
 
 **Key Results:**
 
